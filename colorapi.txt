@@ -1,4 +1,4 @@
-colorAPI = {}
+local colorAPI = {}
 
 colorAPI.color = function(Part, color)
 	local thread = coroutine.create(function() -- x3.5 speed boost
@@ -151,7 +151,7 @@ colorAPI.colorBuildingBricks = function(arg)
 end
 
 
-function colorAPI:fixColors()
+colorAPI.fixColors() = function()
 spawn(function()
 	colorAPI.colorObbyBox(colorAPI.transformToColor3(BrickColor.new("Teal")))
 end)
@@ -194,7 +194,6 @@ spawn(function()
 		chiC = colorAPI.transformToColor3(BrickColor.new("Sand red"))
 	})
 end)
-
 end
 
 return colorAPI
