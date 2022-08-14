@@ -151,7 +151,7 @@ colorAPI.colorBuildingBricks = function(arg)
 end
 
 
-colorAPI.fixColors() = function()
+colorAPI.fixColors = function()
 spawn(function()
 	colorAPI.colorObbyBox(colorAPI.transformToColor3(BrickColor.new("Teal")))
 end)
